@@ -1,7 +1,6 @@
-package day38_Inheritance;
+package day38_Inheritance.carTask;
 
 public class Car {
-
     public String brand, model;
     public int year;
     public double price;
