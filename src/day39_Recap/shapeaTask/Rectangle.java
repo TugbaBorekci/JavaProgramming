@@ -1,12 +1,11 @@
 package day39_Recap.shapeaTask;
 
-public class Rectangle {
+public class Rectangle extends Shape {
+
 
     private double length, width;
 
     //burdan sonra generate getter & setter yapmamiz lazim baska sayfalarda read and write yapabilmek icin
-
-
     public double getLength() {
         return length;
     }
@@ -30,6 +29,14 @@ public class Rectangle {
             this.width = width;
         }
     }
+
+    //generator constructor yapmamiz lazim
+     public Rectangle(double length, double width) {
+        super("Rectangle");
+        setLength(length);//this.keyword u silip manual olarak bunu yazdik
+        setWidth(width);//this.keyword u silip manual olarak bunu yazdik
+    }
+
 }
 /*
 Rectangle extends Shape:
