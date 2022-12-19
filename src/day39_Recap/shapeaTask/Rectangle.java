@@ -37,6 +37,18 @@ public class Rectangle extends Shape {
         setWidth(width);//this.keyword u silip manual olarak bunu yazdik
     }
 
+    //generate override methods yapicagiz
+    @Override
+    public double area() {
+       // return super.area();burasi silinip rectangle formula yazilicak
+        return length * width;
+    }
+
+    @Override
+    public double perimeter() {
+       // return super.perimeter();burasi silinip rectangle formula yazilicak
+        return 2 * ( length + width );
+    }
 }
 /*
 Rectangle extends Shape:
