@@ -37,8 +37,8 @@ public class Shape {
     public String toString() {
         return "Shape{" +
                 "name='" + name + '\'' +
-                ", area='" + area() + '\'' +
-                ", perimeter='" + perimeter() + '\'' +
+                ", area='" + area() + '\'' +//manual olarak ekledik bu kismi
+                ", perimeter='" + perimeter() + '\'' +//manual olarak ekledik bu kismi
                 '}';
     }
 }
