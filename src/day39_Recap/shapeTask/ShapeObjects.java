@@ -1,4 +1,4 @@
-package day39_Recap.shapeaTask;
+package day39_Recap.shapeTask;
 
 public class ShapeObjects {
 
