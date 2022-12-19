@@ -49,6 +49,17 @@ public class Rectangle extends Shape {
        // return super.perimeter();burasi silinip rectangle formula yazilicak
         return 2 * ( length + width );
     }
+
+    //generate toString method hazirliyacagiz
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                ", area='" + area() + '\'' +//manual olarak ekledik bu kismi
+                ", perimeter='" + perimeter() + '\'' +//manual olarak ekledik bu kismi
+                '}';
+    }
 }
 /*
 Rectangle extends Shape:
