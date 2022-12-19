@@ -11,6 +11,11 @@ public class Tester extends Employee {
         System.out.println(getJobTitle() + " "+getName()+" is creating ticket");
     }
 
+    //create override methods
+    @Override
+    public void work() {
+        System.out.println(getJobTitle()+" "+getName()+" is testing the application");
+    }
 }
 /*
 3. Create a sub class of Employee named Tester
