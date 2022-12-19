@@ -26,8 +26,8 @@ public class Rectangle extends Shape {
         if (width <= 0) {
             System.err.println("Invalid Width: " + width);
             System.exit(1);
-            this.width = width;
         }
+        this.width = width;
     }
 
     //generator constructor yapmamiz lazim

@@ -2,7 +2,7 @@ package day39_Recap.shapeaTask;
 
 public class Square extends Shape {
 
-    private double side;//side is instance veriable
+    private double side;//side is instance veriable.eger bunu public yaparsak daha sonra objects clasda yaicagimiz islemlerde condition i kontrol etmeden direkt girilen sayinin 0 yada negatif(invalid) olmasina bakmadan islem yapar
 
     //encapsulated generate getter & setter (we can able to read and write this side)outside the class. it returns the value
     public double getSide() {
@@ -17,8 +17,8 @@ public class Square extends Shape {
         this.side = side;//the parameter value assign the side
     }
 
-    public Square(String name, double side) {
-        super(name);
+    public Square(double side) {
+        super("Square");
         setSide(side);//check the requirement(yukaridaki if ile hazirlanan requirement i kontrol edicek)kosul varsa mutlaka setter(setSide())yazmamiz lazim kosula gore ilerlemesi gerekiyor cunku
     }
    //yada bu sekilde yazabiliriz
