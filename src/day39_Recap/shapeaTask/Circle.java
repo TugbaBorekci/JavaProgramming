@@ -6,10 +6,11 @@ public class Circle extends Shape{
     public static double pi = 3.14;
 
     public double getRadius() {
+
         return radius;
     }
 
-    private void setRadius(double radius){
+    public void setRadius(double radius){
         if (radius <= 0){
             System.err.println("Invalid Radius: "+radius);
             System.exit(1);
@@ -24,11 +25,13 @@ public class Circle extends Shape{
 
     @Override
     public double area() {
+
         return radius * radius * pi;
     }
 
     @Override
     public double perimeter() {
+
         return 2 * radius * pi;
     }
 
