@@ -9,7 +9,9 @@ public class MobileApp {
         this.name = name;
         this.version = version;
     }
-public void useTheApp(int minutes){
+
+
+    public void useTheApp(int minutes){
     System.out.println("The user is using " + name + "application for" + minutes + "minutes");
 
 }

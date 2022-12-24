@@ -57,7 +57,11 @@ public class Employee extends Person {
                     ", salary=" + salary +
                     '}';
         }
+
+    public boolean salary() {
+        return false;
     }
+}
 
 /*
  2. Create a sub class of Person named Employee:

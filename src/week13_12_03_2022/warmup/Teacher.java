@@ -9,6 +9,10 @@ public class Teacher {
     public LocalDate dateOfBirth;
     public int age;
     public long id;
+/*
+               mac:      command+N for seeing options for Constructor and toString
+               windows:   Alt+insert for seeing options for Constructor and toString
+ */
 
 
     public String getName() {
