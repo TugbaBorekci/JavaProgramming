@@ -6,6 +6,7 @@ public class Student {
     public int age;
     public int studentID;
     public char grade;
+    public boolean getNa;
 
     public Student(String name) {
         this.name = name;
@@ -53,6 +54,9 @@ public class Student {
     }
 
 
+    public boolean getName() {
+        return false;
+    }
 }
 /*
 Student Task:
