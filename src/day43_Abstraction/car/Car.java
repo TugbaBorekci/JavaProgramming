@@ -1,8 +1,8 @@
 package day43_Abstraction.car;
 
-public class Car {
+public abstract class Car {
 
-//sadece bu sekilde yazip getter ve setter yaptigimizda compile time error hala hata veriyor o yuzden constructor yapmamiz lazim
+    //sadece bu sekilde yazip getter ve setter yaptigimizda compile time error hala hata veriyor o yuzden constructor yapmamiz lazim
     private final String brand, model;
     private String color;
     private final int year;
@@ -15,8 +15,8 @@ public class Car {
         this.model = model;
         //this.color = color;setter da bunu verdigimiz icin degistiriyoruz ve condition i yaziyoruz
         setColor(color);
-        if(year < 1886){
-            throw new RuntimeException("Invalid Year: " +year);
+        if (year < 1886) {
+            throw new RuntimeException("Invalid Year: " + year);
         }//before check setting year so we wrote before condition
         this.year = year;
         //this.price = price;setter da bunu verdigimiz icin degistiriyoruz
@@ -49,9 +49,35 @@ public class Car {
 
     public void setPrice(double price) {
 
-        if (price <= 0){
-            throw new RuntimeException("Invalid price:  "+price);
+        if (price <= 0) {
+            throw new RuntimeException("Invalid price:  " + price);
         }
         this.price = price;
+    }
+
+
+//constructor getter setter bunlari yaptik bundan sonra other veriables ve methodlari hazirlayalim
+//methods
+
+
+    public  void stop(){
+
+        System.out.println("Press the brake");
+    }
+
+
+    public abstract void start();
+
+    //methodlari hazirladiktan sonra yazdirmak icin toString method yapmamiz lazim
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=" + price +
+                '}';
     }
 }
